@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="font-poppins">
+    <div class="relative h-[580px] sm:h-[480px] md:h-[650px] overflow-hidden">
+        <div class="relative bg-primary z-50 flex flex-col sm:flex-row items-center gap-5 justify-between p-5 pb-14">
+            <div class="sm:pl-6">
+                <p class="text-xs sm:text-sm font-bold">This is the first example of a statewide notice.</p>
+            </div>
+            <div class="flex items-center gap-5 pr-6">
+                <a href="tel:8663491770" class="text-sm font-bold hidden lg:block">
+                    <i class="fa-solid fa-phone pr-1 text-blue-600"></i> 
+                    866.349.1770</a>
+                <a href="#" class="text-xs sm:text-sm font-bold text-black bg-orange-400 hover:bg-orange-500 transition py-2.5 px-7 rounded-full">Contact</a>
+                <a href="#" class="text-xs sm:text-sm font-bold text-black bg-orange-400 hover:bg-orange-500 transition py-2.5 px-7 rounded-full text-nowrap">Verify Insurance</a>
+            </div>
+        </div>
+
+        <header class="relative bottom-14 z-50 bg-white shadow-md rounded-lg m-5">
+            <div class="max-w-7xl mx-auto flex items-center justify-between px-3 py-4">
+                <div class="flex items-center space-x-2">
+                    <img src="image/BeachsideLogo.png" alt="Beachside Logo" class="h-8 sm:h-10">
+                </div>
+                <ul class="hidden md:flex md:space-x-4 lg:space-x-6 text-sm font-medium text-gray-700">
+                    <li><a href="#" class="text-sm font-bold hover:text-blue-600">Mental Health</a></li>
+                    <li><a href="#" class="text-sm font-bold hover:text-blue-600">Substance Abuse & Therapy</a></li>
+                    <li><a href="#" class="text-sm font-bold hover:text-blue-600">About Beachside Rehab</a></li>
+                </ul>
+                <a href="#"><i class="fa-solid fa-magnifying-glass text-blue-600"></i></a>
+            </div>
+        </header>
+
+        
+        <div class="bg-[url('./image/headerBanner1.png')] bg-cover bg-center absolute inset-0 transition-opacity duration-1000 opacity-100"
+            data-slide="0">
+            <div class="relative z-30 bg-black bg-opacity-40 size-full flex flex-col justify-center px-6 md:px-16 text-white">
+                <div class="pt-32 md:max-w-lg">
+                    <h1 class="font-alice text-4xl md:text-5xl xl:text-7xl mb-4">West Palm Beach, Florida</h1>
+                    <p class="text-xl md:text-2xl xl:text-3xl  mb-6">Mental Health & Addiction Treatment Center</p>
+                    <a href="#" class="text-xs sm:text-sm font-bold text-black bg-orange-400 hover:bg-orange-500 transition py-2.5 px-7 rounded-full">About Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[url('./image/headerBanner2.png')] absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center"
+            data-slide="1">
+            <div class="relative z-30 bg-black bg-opacity-40 size-full flex flex-col items-end justify-center px-6 md:px-16 text-white">
+                <div class="pt-32 md:max-w-lg">
+                    <h1 class="font-alice text-4xl md:text-5xl xl:text-7xl mb-4">Our <br/> State-of-the-Art Amenities</h1>
+                    <p class="text-xl md:text-2xl xl:text-3xl mb-6">Allow You To Relax & Recover Comfortably</p>
+                    <a href="#" class="text-xs sm:text-sm font-bold text-black bg-orange-400 hover:bg-orange-500 transition py-2.5 px-7 rounded-full">Our Facilities</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[url('./image/headerBanner1.png')] absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center"
+            data-slide="2">
+             <div class="relative z-30 bg-black bg-opacity-40 size-full flex flex-col justify-center px-6 md:px-16 text-white">
+                <div class="pt-32 md:max-w-lg">
+                    <h1 class="font-alice text-4xl md:text-5xl xl:text-7xl mb-4">Looking For <br/> A Place To Start Recovery?</h1>
+                    <p class="text-xl md:text-2xl xl:text-3xl mb-6">This Is It. Find Out More, Today!</p>
+                    <a href="#" class="text-xs sm:text-sm font-bold text-black bg-orange-400 hover:bg-orange-500 transition py-2.5 px-7 rounded-full">Our Programs</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
+            <button class="w-8 h-2 bg-white rounded-full opacity-80 hover:opacity-100" data-dot="0"></button>
+            <button class="w-8 h-2 bg-white rounded-full opacity-50 hover:opacity-100" data-dot="1"></button>
+            <button class="w-8 h-2 bg-white rounded-full opacity-50 hover:opacity-100" data-dot="2"></button>
+        </div>
+    </div>
+
+    <section class="px-6 lg:px-16 py-12">
+        <div class="grid sm:grid-cols-2 items-center gap-10">
+            <div class="max-w-lg">
+                <h2 class="text-xl sm:text-2xl md:text-xl xl:text-3xl text-gray-800 text-balance">
+                    Customized Mental Health and
+                    Addiction Therapy
+                </h2>
+                <p class="text-sky-700 text-xl mt-1">Respecting the Individual</p>
+                <p class="text-sm text-gray-600 mt-4 leading-relaxed">
+                    At Beachside Rehab, we know that each person's mental health issues are unique and that
+                    addiction is an individualized disease and we tailor treatment programs to specifically
+                    address each clients' needs. We get to know you as a person. Before you arrive at Beachside Rehab, our clinical and medical team dedicates time to understanding your mental health or
+                    addiction situation so we can customize a program that's right for you.
+                </p>
+                <button class="mt-6 text-xs sm:text-sm font-bold text-black bg-orange-400 hover:bg-orange-500 transition py-2.5 px-7 rounded-full transition">
+                    Explore Personalized Therapy
+                </button>
+            </div>
+            <div class="relative rounded-lg  overflow-hidden">
+                <img src="image/customize-metal-health.png" alt="Therapy Center" class="w-full h-auto object-cover" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="size-14 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform cursor-pointer">
+                        <svg class="size-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M6 4l10 6-10 6V4z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary px-6 lg:px-16 py-12">
+        <div class="grid sm:grid-cols-2 items-center gap-10">
+            <div class="rounded-lg overflow-hidden">
+                <img src="image/Beachside-Adaptable.png" alt="Therapy Center" class="w-full h-auto object-cover" />
+            </div>
+             <div class="max-w-lg">
+                <h2 class="text-xl sm:text-2xl md:text-xl xl:text-3xl text-gray-800 text-balance">
+                    We're Adaptable
+                </h2>
+                <p class="text-sm text-gray-600 mt-4 leading-relaxed">
+                    Unlike a hospital, Beachside Rehab is more akin to a Mental Health Retreat. We don't expect the same program to work for every person, so we provide a variety of proven therapies in a luxury, peaceful environment where you truly feel cared for. We pair counseling and traditional therapies with a mind, body, spirit focus. That includes holistic healing services and informal quiet walks on our secluded property. Beachside Rehab is Florida's premier Mental Health Treatment Center
+                </p>
+                <button class="mt-6 text-sm font-bold text-black bg-orange-400 hover:bg-orange-500 transition py-2.5 px-7 rounded-full transition">
+                    About Us
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-secondary">
+        <div class="flex flex-col lg:flex-row justify-between max-w-5xl mx-auto py-4 px-4 xl:px-0">
+            <div>
+                <h2 class="font-alice text-xl sm:text-2xl text-white pb-6">Our Accreditations</h2>
+                <a href="#" class="text-xs sm:text-sm font-bold text-black bg-orange-400 hover:bg-orange-500 transition py-2.5 px-7 rounded-full">Learn More</a>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center gap-10 sm:gap-24 pt-12 lg:pt-0">
+                <img src="image/national-association-logo.png" alt="" class="w-64">
+                <img src="image/dcf-logo.png" alt="" class="w-16">
+                <img src="image/goldseal-national-black-logo.png" alt="" class="w-16">
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="flex flex-col xl:flex-row">
+                <img src="image/Beachside-img.png" alt="">
+                <div class="bg-secondary-focus xl:rounded-tr-lg rounded-bl-lg xl:rounded-bl-none rounded-b-lg rounded-l-none w-full py-10 sm:py-14 px-5 sm:px-16">
+                   <h2 class="font-alice text-xl sm:text-2xl text-white pb-4">Ready To Learn More About Mental Health Programs</h2>
+                   <p class="text-sm text-white text-balance">Get more information on why they may be the right choice for yourself or your loved one. Fill out the form below and one of our admissions counselors can assist you!</p>
+                    <form class="space-y-6 pt-4 text-sm">
+                        <div class="flex flex-col sm:flex-row gap-6">
+                          <input type="text" placeholder="Full Name" class="flex-1 px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"/>
+                          <input type="text" placeholder="Phone Number" class="flex-1 px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"/>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-6 items-stretch">
+                          <input type="email" placeholder="Email Address" class="flex-1 px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400"/>
+                          <button type="submit" class="text-xs sm:text-sm font-bold text-black py-2.5 px-7 rounded-full bg-orange-400 hover:bg-orange-500 transition">Request More Info</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 py-4 gap-10">
+            <div>
+                <h3 class="text-sm sm:text-lg font-bold text-white">More Information</h3>
+                <ul class="text-xs leading-loose text-orange-400">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Drug Detox Centers</a></li>
+                    <li><a href="#">Beachside Accreditations</a></li>
+                    <li><a href="#">How To Leave A Review</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm sm:text-lg font-bold text-white">Helpful Topics</h3>
+                <ul class="text-xs leading-loose text-orange-400">
+                    <li><a href="#">Signs of Drug Addiction</a></li>
+                    <li><a href="#">Staging an Intervention</a></li>
+                    <li><a href="#">What Is Withdrawal</a></li>
+                    <li><a href="#">What is Detox</a></li>
+                    <li><a href="#">Addiction Recovery</a></li>
+                    <li><a href="#">Addiction Aftercare</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm sm:text-lg font-bold text-white">Holistic Treatment</h3>
+                <ul class="text-xs leading-loose text-orange-400">
+                    <li><a href="#">Psychodrama Therapy</a></li>
+                    <li><a href="#">Faith Based Therapy</a></li>
+                    <li><a href="#">Music Therapy</a></li>
+                    <li><a href="#">Equine Therapy</a></li>
+                    <li><a href="#">Art Therapy</a></li>
+                    <li><a href="#">Nutrition & Fitness</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-xs sm:text-sm font-bold text-white text-end sm:text-start lg:text-end pb-6">©2024 Beachside Rehab</p>
+                <ul class="flex flex-wrap md:flex-nowrap items-center justify-end gap-4">
+                    <li><a href="#" class="size-8 flex items-center justify-center bg-orange-400 text-black rounded-full"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" class="size-8 flex items-center justify-center bg-orange-400 text-black rounded-full"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="size-8 flex items-center justify-center bg-orange-400 text-black rounded-full"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#" class="size-8 flex items-center justify-center bg-orange-400 text-black rounded-full"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#" class="size-8 flex items-center justify-center bg-orange-400 text-black rounded-full"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+<script>
+  const slides = document.querySelectorAll('[data-slide]');
+  const dots = document.querySelectorAll('[data-dot]');
+  let currentSlide = 0;
+  let slideInterval;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('opacity-100', i === index);
+      slide.classList.toggle('opacity-0', i !== index);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('opacity-80', i === index);
+      dot.classList.toggle('opacity-50', i !== index);
+    });
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    const next = (currentSlide + 1) % slides.length;
+    showSlide(next);
+  }
+
+  function startSlider() {
+    slideInterval = setInterval(nextSlide, 5000); // 5s
+  }
+
+  function stopSlider() {
+    clearInterval(slideInterval);
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      stopSlider();
+      showSlide(+dot.dataset.dot);
+      startSlider();
+    });
+  });
+
+  // Init
+  startSlider();
+</script>
+</body>
+</html>
